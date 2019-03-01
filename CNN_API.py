@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 #data variables
 DATA_dir = 'C:\\Users\\yarne\\dropbox\\DeepLearning\\Data\\Petimages\\evaluate'
 img_size = 50
-n_img = 4
+n_img = 5
 
 #create train_data
 predict_data = []
