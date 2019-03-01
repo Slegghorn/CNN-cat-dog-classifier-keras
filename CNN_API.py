@@ -23,7 +23,7 @@ def create_predict_data():
 
 create_predict_data()
 x = np.array(predict_data).reshape(-1, img_size, img_size, 1)
-x = x/255.0
+x = x / 255.0
 model = tf.keras.models.load_model('CNN_cat-dog.h5')
 print(model.evaluate(x, [1 for i in range(n_img)]))
 print((model.predict(x)-1)*100)
