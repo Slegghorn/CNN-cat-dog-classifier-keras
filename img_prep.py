@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import random
 
 #data variables
-DATA_dir = 'C:\\Users\\yarne\\dropbox\\tensorflow\\Petimages'
+DATA_dir = 'C:\\Users\\yarne\\dropbox\\deeplearning\\Data\\Petimages'
 categories = ['Dog', 'Cat']
 img_size = 50
 
@@ -35,4 +35,3 @@ for features, label in train_data:
 x = np.array(x).reshape(-1, img_size, img_size, 1)
 np.save('x_data', x)
 np.save('y_data',y)
-print(y[0])
