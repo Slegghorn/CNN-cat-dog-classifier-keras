@@ -15,7 +15,8 @@ train_data = []
 def create_train_data():
     for category in categories:
         path = os.path.join(DATA_dir, category)
-        class_num = categories.index(category)
+        class_num = [0, 0]
+        class_num[categories.index(category)] = 1
         for img in os.listdir(path):
             try:
                 img_array = cv2.imread(os.path.join(path, img), cv2.IMREAD_GRAYSCALE)
